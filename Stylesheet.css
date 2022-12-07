@@ -1,0 +1,49 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+/*seting the background color of the index page in the body tag */
+body {
+    background: rgb(168, 157, 157);
+}
+container{
+    width: 40%;
+    height: 400px;
+    position:absolute;
+    /*following content is just to center inside the body*/
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 10px 20px rgb(73, 73, 85);
+}
+
+/*size of the picture for the main page*/
+img{
+    height: 75%;
+    width: 75%;
+}
+/*this allows the cursor to hover over the image and interact with the picture*/
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: Verdana;
+    text-align: center;
+}
+.container:hover .overlay{
+    opacity: 0.8;
+}
